@@ -19,19 +19,25 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+        {dataportfolio.map((data, i) => (
+          <Row key={i} className="mb-5">
+            <Col md="6">
+              <div className="po_item">
+                <img src={data.img} alt="" className="img-fluid"/>
                 <div className="content">
                   <p>{data.description}</p>
                   <a href={data.link}>view project</a>
                 </div>
               </div>
-            );
-          })}
-        </div>
+            </Col>
+            <Col md="6">
+              <div className="project-summary">
+                <h3>Project Overview</h3>
+                <p>{data.summary}</p>
+              </div>
+            </Col>
+          </Row>
+        ))}
       </Container>
     </HelmetProvider>
   );

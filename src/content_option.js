@@ -1,157 +1,113 @@
-const logotext = "JOHN";
+const logotext = "MATT";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Matt Ly",
+    description: "IT Support Analyst specializing in Microsoft technologies, currently working in Sydney",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I'm Matt Ly",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "IT Support Specialist",
+        second: "Microsoft Technology Expert",
+        third: "Problem Solver",
+        fourth: "Continuous Learner",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Customer focused, IT support specialist with years of technical experience in supporting hybrid IT environments, from small enterprises to large-scale multinational corporations. Passionate about continuous learning and excited to broaden technical skills whilst helping businesses achieve seamless technology operations.",
+    your_img_url: "https://images.unsplash.com/photo-1504639725590-34d0984388bd", // Professional IT-themed placeholder image
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About Me",
+    aboutme: "I'm an IT Support Analyst with extensive experience in the Microsoft technology stack, including Entra ID, Microsoft Office Suite, Exchange Online, SharePoint, and MFA/IAM/SSO solutions. My focus is on delivering exceptional technical support while ensuring system security and efficiency. I have a proven track record of resolving complex technical issues and implementing solutions that improve business operations.",
 };
+
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Service Desk Analyst",
+        where: "Merivale",
+        date: "2024 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Helpdesk Analyst",
+        where: "Crown Equipment Corporation",
+        date: "2022 - 2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Customer Support Operator",
+        where: "DHL Express",
+        date: "2020 - 2022",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Microsoft 365 Suite",
+        value: 95,
+    },
+    {
+        name: "AD/Entra ID",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "SharePoint",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "Exchange Online",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "PowerShell",
+        value: 65,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Network Administration",
+        value: 60,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "IT Support & Troubleshooting",
+        description: "Comprehensive technical support for hardware, software, and network issues with a focus on quick resolution and user satisfaction.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "System Administration",
+        description: "Management and administration of Microsoft technologies including Entra ID, Exchange Online, and SharePoint environments.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Security & Compliance",
+        description: "Implementation and maintenance of security measures, including MFA, IAM/SSO, and vulnerability assessments.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://saathi.org.np/wp-content/uploads/2023/08/cropped-saathi-logo1.jpg",
+        description: "SAATHI - Telehealth in India: Social computing strategy implementation for non-profit engagement",
+        link: "https://saathi.org.np/",
+        summary: "As a consultant for SATHI's Telehealth initiative in India, I developed and implemented a comprehensive social computing strategy. The project focused on increasing social media engagement and attracting donations to support healthcare accessibility in underserved regions. Key achievements included analyzing social media patterns, creating engagement strategies, and successfully driving attention and donations to support the organization's mission."
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+        img: "https://shifawellbeing.com.au/wp-content/uploads/2020/07/Shifa-Wellbeing-Logo-768x283.png",
+        description: "SHIFA Wellbeing - Website Improvement Project: UI/UX consultation and implementation",
+        link: "https://shifawellbeing.com.au/",
+        summary: "Led a comprehensive website improvement project for SHIFA Wellbeing, focusing on enhancing user experience and functionality of ann existing website. The project involved multiple phases including requirements gathering, scope establishment, client expectation management, solution development, prototyping, testing, and final implementation. Successfully delivered a more intuitive and efficient website that better served the organization's needs."
+    }
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "matthew.ly.professional@gmail.com",
+    YOUR_FONE: "0423655296",
+    description: "Feel free to contact me for any IT support or consultation needs. I'm always excited to take on new challenges and help businesses optimize their technology infrastructure.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_tolq0vm",
+    YOUR_TEMPLATE_ID: "template_q53tezm",
+    YOUR_USER_ID: "nRgibGtyrqm0_OmJP",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Matt-Ly-GitHub",
+    linkedin: "https://www.linkedin.com/in/matt-l-826a4424a/",
 };
+
 export {
     meta,
     dataabout,
