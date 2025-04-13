@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
+import TextTransition, { presets } from "react-text-transition";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+  const [index, setIndex] = useState(0);
+  const texts = [
+    introdata.animated.first,
+    introdata.animated.second,
+    introdata.animated.third,
+    introdata.animated.fourth,
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // Changes text every 3 seconds
+    );
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -24,18 +40,9 @@ export const Home = () => {
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x">
-                  <Typewriter
-                    options={{
-                      strings: [
-                        introdata.animated.first,
-                        introdata.animated.second,
-                        introdata.animated.third,
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 10,
-                    }}
-                  />
+                  <TextTransition springConfig={presets.gentle} direction="down">
+                    {texts[index % texts.length]}
+                  </TextTransition>
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">

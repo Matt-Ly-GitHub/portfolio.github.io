@@ -38,32 +38,6 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Microsoft 365 Suite",
-        value: 95,
-    },
-    {
-        name: "AD/Entra ID",
-        value: 90,
-    },
-    {
-        name: "SharePoint",
-        value: 85,
-    },
-    {
-        name: "Exchange Online",
-        value: 80,
-    },
-    {
-        name: "PowerShell",
-        value: 65,
-    },
-    {
-        name: "Network Administration",
-        value: 60,
-    },
-];
-
 const services = [{
         title: "IT Support & Troubleshooting",
         description: "Comprehensive technical support for hardware, software, and network issues with a focus on quick resolution and user satisfaction.",
@@ -113,7 +87,6 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
     services,
     introdata,
     contactConfig,
