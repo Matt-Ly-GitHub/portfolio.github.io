@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio.github.io/static/css/main.7e0891b2.css",
+    "main.css": "/portfolio.github.io/static/css/main.72b9914e.css",
     "main.js": "/portfolio.github.io/static/js/main.c4335c28.js",
     "index.html": "/portfolio.github.io/index.html"
   },
   "entrypoints": [
-    "static/css/main.7e0891b2.css",
+    "static/css/main.72b9914e.css",
     "static/js/main.c4335c28.js"
   ]
 }
